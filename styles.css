@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amatic+SC&display=swap');
+
 body {
     background-color: white;
     
@@ -53,6 +55,8 @@ nav a {
     text-decoration: none;
     color: black;
     font-size: 18px
+    
+    
     /* border: 2px solid red; */
 }
 
@@ -75,7 +79,7 @@ nav a:hover {
 }
 
 .introduction {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     padding: 4em;
     width: 53em;
@@ -121,7 +125,7 @@ nav a:hover {
     width: 15em;
     border-radius: 50%;
 
-    border: 3px solid black;
+    border: 3px solid tan;
     
 }
 
