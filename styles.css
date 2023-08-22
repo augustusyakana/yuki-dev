@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel&family=Raleway&display=swap');
 
 body {
     background-color: white;
@@ -28,11 +28,12 @@ body {
     flex: 1;
     margin-left: 20em;
     padding: 10px;
-    /* margin-top: 10px; */
+    margin-top: 18px;
 }
 
 .logo img {
     width: 9em;
+    
 }
 
 .logo img:hover {
@@ -52,6 +53,7 @@ nav {
 }
 
 nav a {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: black;
     font-size: 18px
@@ -87,7 +89,7 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
 
-    background-color: antiquewhite;
+    /* background-color: antiquewhite;  */
     border-radius: 50px;
 }
 
@@ -105,20 +107,24 @@ nav a:hover {
 }
 
 .intro .hello {
-    font-size: 20px;
+    font-size: 26px;
     margin-bottom: -50px;
     margin-left: 150px;
+
+    font-family: 'Alex Brush', cursive;
     
 }
 
 .intro .title {
     margin-top: -40px;
-    font-size: 20px;
-    margin-left: 10px;
+    font-size: 18px;
+
+    font-family: 'Cinzel', serif;
 }
 
 .intro h1 {
-    font-size: 44px;
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
 }
 
 .photo img {
@@ -146,4 +152,55 @@ nav a:hover {
 
 .socials img:hover {
     transform: scale(1.1);
+}
+
+/* Stacks */
+
+main {
+    margin-top: 100px;
+}
+
+.stack-title {
+    /* border: 2px solid black; */
+    font-family: 'Cinzel', serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.stack {
+    /* border: 2px solid black; */
+
+    height: 30em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill-box {
+    border: 2px solid tan;
+    background-color: antiquewhite;
+
+    width: 20em;
+    height: 25em;
+
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.skill-box ul {
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 20px;
+
+    
+}
+
+.skill-box li {
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    border: 2px solid black;
 }
