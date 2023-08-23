@@ -126,6 +126,26 @@ nav a:hover {
     font-family: 'Cinzel', serif;
 }
 
+.intro button {
+    font-family: 'Cinzel', serif;
+    color: black;
+    background-color: rgb(147, 147, 255);
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 5px black;
+}
+
+.intro button:hover {
+    box-shadow: 3px 3px 5px orangered;
+    transform: scale(1.1);
+}
+
 .intro h1 {
     font-size: 40px;
     font-family: 'Cinzel', serif;
