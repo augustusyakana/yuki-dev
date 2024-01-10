@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    
+    --nav-load-time: 300ms;
 }
 
 /* TOP HEADER */
@@ -33,6 +33,8 @@ body {
 
     color: white;
     background: rgb(97, 47, 47);
+
+    animation: nav-load var(--nav-load-time) ease-in;
 }
 
 .logo {
@@ -49,6 +51,9 @@ body {
 .logo img {
     width: 20rem;
     
+    animation: photo-load var(--nav-load-time) 300ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
 }
 
 .logo img:hover {
@@ -75,7 +80,9 @@ nav a {
     font-size: 18px;
     font-weight: lighter;
     position: relative;
-    
+    animation: social-right-load 300ms ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateX(2000%);
     
     /* border: 2px solid red; */
 }
@@ -121,6 +128,15 @@ nav a #active{
 
     color: white;
 
+}
+
+.intro .hello,
+.intro h1,
+.intro .title,
+.intro #about-me {
+    animation: intro-left-load 300ms ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);
 }
 
 #name {
@@ -172,10 +188,15 @@ nav a #active{
 }
 
 .photo img {
+    animation: img-load 1000ms ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+    
     width: 60%;
     border-radius: 500px;
     border: 7px solid white;
     margin-left: -50px;
+    
 }
 
 #socialsTitle h2 {
@@ -198,6 +219,18 @@ nav a #active{
 
 }
 
+#left img {
+    animation: social-left-load 500ms ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-2000%);
+}
+
+#right img {
+    animation: social-right-load 500ms ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateX(2000%);
+}
+
 .socials a:hover {
     transform: scale(1.2);
     
@@ -215,3 +248,92 @@ footer {
     align-items: center;
 }
 
+@keyframes nav-load {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes photo-load {
+    0% {
+        transform: scale(0);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes social-left-load {
+    0% {
+        transform: translateX(-2000%);
+    }
+
+    90% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes social-right-load {
+    0% {
+        transform: translateX(2000%);
+    }
+
+    90% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes nav-right-load {
+    0% {
+        transform: translateX(1000%);
+    }
+
+    90% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes intro-left-load {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes img-load {
+    0% {
+        transform: scale(0);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
