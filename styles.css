@@ -239,13 +239,21 @@ nav a #active{
 footer {
 
     background-color: rgb(97, 47, 47);
-    height: 10em;
+    height: 5em;
     color: white;
     font-family: 'Raleway', sans-serif;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#lastModified {
+    color: darkgray;
+    margin-top: -10px;
+
+    font-size: 12px;
 }
 
 @keyframes nav-load {
