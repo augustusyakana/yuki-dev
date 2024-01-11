@@ -9,7 +9,6 @@ const year = new Date(lastModified).getFullYear();
 const marriageYear = 2013;
 
 let marriageLength = year - marriageYear;
-console.log(`Length: ${marriageLength}`);
 marriageYearsElement.textContent = marriageLength;
 
 // updating copyright year
