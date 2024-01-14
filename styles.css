@@ -32,7 +32,7 @@ body {
     min-height: 80px;
 
     color: white;
-    background: rgb(97, 47, 47);
+    background: rgb(56, 45, 45);
 
     animation: nav-load var(--nav-load-time) ease-in;
 }
@@ -172,7 +172,7 @@ nav a #active{
 }
 
 #about-me p {
-    width: 50%;
+    width: 60%;
     text-align: center;
 
     font-family: 'Raleway', sans-serif;
@@ -185,6 +185,7 @@ nav a #active{
     justify-content: center;
     align-items: center;
     margin-left: -90px;
+    margin-bottom: -50px;
 }
 
 .photo img {
@@ -192,10 +193,10 @@ nav a #active{
     animation-fill-mode: forwards;
     transform: scale(0);
     
-    width: 60%;
-    border-radius: 500px;
-    border: 7px solid white;
-    margin-left: -50px;
+    width: 70%;
+    /* border-radius: 500px; */
+    border: 5px solid white;
+    margin-bottom: -80px;
     
 }
 
@@ -203,14 +204,17 @@ nav a #active{
     color: white;
     font-family: 'Satisfy', cursive;
     font-size: 30px;
+    margin-bottom: -20px;
 
     text-align: center;
 }
 
 .socials {
     min-height: 100px;
-    margin-top: -45px;
+    border-radius: 50px;
 
+    width: 800px;
+    margin: 0 auto;
     background: rgb(56, 45, 45);
     display: flex;
     justify-content: center;
@@ -234,6 +238,95 @@ nav a #active{
 .socials a:hover {
     transform: scale(1.2);
     
+}
+
+#stack {
+    color: white;
+    font-family: inherit;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stack h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+#frontSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+#frontSkills p {
+    text-align: center;
+}
+
+#frontTitle {
+    border-bottom: 1px solid rgb(56, 45, 45);
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#frontTitle h3 {
+    margin-left: 10px;
+}
+
+#html {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#css {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#js {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#backSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+
+    margin-top: 5em;
+}
+
+#backSkills p {
+    text-align: center;
+}
+
+#backTitle {
+    border-bottom: 1px solid rgb(56, 45, 45);
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#backTitle h3 {
+    margin-left: 10px;
+}
+
+#python {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#csharp {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#stack {
+    margin-bottom: 10em;
 }
 
 footer {
